@@ -1,0 +1,12 @@
+Configuracion de GIT 
+nombre del usuario:
+git confit-global --global user.name "Nombre"
+Direccion de email 
+git config --global user.email "email@gmail.com"
+
+Configurrar del editor de codigo VSC 
+git config-- 
+
+git remoto agregar origen https://github.com/monicagarcia13/python_basico.git
+ git branch -M main 
+git push -u origin main
