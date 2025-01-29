@@ -77,23 +77,38 @@ funcion()
 print(variableGlobal)
 print(variableDeScope)
 
-## Caracteristicas basicas 
+"""
+CARACTERÍSTICAS BÁSICAS DE PYTHON
+"""
 
-#variables
-# Una variable es un espacio  en memoria para guardar datos 
-#por tanto , es un contenededor 
+# VARIABLES
+# Una variable es un espacio en memoria para guardar datos
+# por tanto, es un contenedor
 
-# para crear una variable ... 
-# indetificador = valor 
+# Para crear una variable...
+# identificador = valor
 
-# hay reglar para llamar a los indetificadores = nombre de la variable 
-#No se puede hacer: 
-#1variable(empezar por un numero)
-# $variable( ni empezar ni contener simbolos especiales)
+# Hay reglas para llamar a los identificadores = nombre de la variable 
+# No se puede hacer:
+#   1variable (empezar por un número, después si lo puede llevar)
+#   $variable (ni empezar ni contener símbolos especiales)
+# De estos errores nos avisará VSC 
 
-#No debemeos hacer (no son exactamente errores) 
+# No debemos hacer (no son exactamente errores):
+#     Contener caracteres fuera del idioma inglás, como ñ, Ç, tildes, á, ö, etc
+#     Empezar por guión bajo (reservado para determinadas situaciones)
 
-# Contener caracteres fuera del idioma ingles, como ñ, tilde, acentos, etc
-# empezar por guion bajo esta reservado para determinadas situaciones 
+# Qué debemos hacer:
+#     Nombrar a nuestras variables con palabras descriptivas
+#     Podemos usar más de una palabra separadas por un guión bajo (directiva PEP-8)
+#     Intentar que las línes de código no sean muy largas
 
-#Que debemos hacer ? 
+# las variables tiene tipo 
+
+#--Numeros => enteros (int) , decimales (float), complejos
+#--Texto => cadenas de caracteres (str)
+#--Booleanos => True, False
+
+# PYTHON ES DE TIPADO DINAMICO 
+
+numero = 1 # entero 

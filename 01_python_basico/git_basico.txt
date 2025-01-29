@@ -1,12 +1,41 @@
-Configuracion de GIT 
-nombre del usuario:
-git confit-global --global user.name "Nombre"
-Direccion de email 
-git config --global user.email "email@gmail.com"
+Configuración de GIT (sólo se hace una vez)
 
-Configurrar del editor de codigo VSC 
-git config-- 
+Nombre del usuario
+git config --global user.name "nombre usuario"
 
-git remoto agregar origen https://github.com/monicagarcia13/python_basico.git
- git branch -M main 
+Dirección de email
+git config --global user.email tu.email@lo.que.sea
+
+Configurar el editor de código (VSC)
+git config --global core.editor "code --wait"
+
+Corrección del salto de línea (true -> windows input -> mac/linux)
+git config --global core.autocrlf true
+
+Para ver la configuración actual
+git config --global -e
+
+====================================================
+
+Iniciamos el repositorio (solo al empezar el proyecto)
+git init
+
+Para ver el estado del repositorio
+git status
+
+Para pasar a la fase Stage
+git add .
+
+Para volver a la fase inicial
+git rm --cached nom_de_fichero
+
+Para pasar a commit (ficheros validados)
+git commit -m "mensaje"
+
+Cuando hay cambios en un fichero
+git commit -a
+
+Instrucciones para GitHub
+git remote add origin https://github.com/mi_cuenta/nombre_del_repo.git
+git branch -M main
 git push -u origin main
