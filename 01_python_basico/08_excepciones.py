@@ -1,46 +1,42 @@
-# EXCEPCIONES 
 
-# Son errores que se produceb  durante la ejecucion del programa y lo interumpen 
 
+'''
+EXCEPCIONES
+Son errores que se producen durante la ejecución del programa
+y lo interrumpen
+'''
 import os
-
 os.system("cls")
 
-# try / except
-# si hay try debe haber un except 
+# try / except 
+# si hay try debe haber un except
+# num = float(input("Escribe un número .... "))
 
-try: 
-   #intentamos ejecutar el codigo
-   num = float(input("Escribe un numero..."))
-   #print( 1/ 0)
-   #print("Despues  de la division por cero")
-except ValueError:
-   print("Has de introducir un numero")
-
-except: 
-   #si se produce una excepcion, ejecutamos este otro codido 
-   print("No se puede dividir por cero")
-
-print("El programa continua...")
-
-
-
-try: 
-   #intentamos ejecutar el codigo
-   num = float(input("Escribe un numero..."))
-   #print( 1/ 0)
-   #print("Despues  de la division por cero")
-except ValueError: #Error de conversion de tipos
-   print("Has de introducir un numero")
-
-except ZeroDivisionError: #Error de división por cero
-   #si se produce una excepcion, ejecutamos este otro codido 
-   print("No se puede dividir por cero")
-
+try:
+    # Intentamos ejecutar el código
+    num = float(input("Escribe un número .... "))
+    # print( 1/0 )
+    # print("Después de la división por cero")
+except ValueError: # Error de conversión de tipos
+    print("Has de introducir un número en cifras")
+except ZeroDivisionError: # Error por división por cero
+    print("No se puede dividir por cero")
 except:
-   print("Ha ocurrido un error") #Error generico
+    print("Ha ocurrido un error") # Error gnérico
 
-print("El programa continua...")
+print("El programa continua ....")
 
 
-
+try:
+    # intenta hacer algo
+    pass
+except:
+    # si falla ejecuta esto
+    pass
+else:
+    # si no falla ejecuta esto
+    pass
+finally:
+    # se ejecuta siempre
+    pass
+print("Aquí habrá más código")
