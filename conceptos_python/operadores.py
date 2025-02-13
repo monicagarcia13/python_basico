@@ -20,9 +20,9 @@ x += 3 # El += le suma el valor al valor anterior
 x -= 2 # El -= le resta el valor al valor anterior
 x *= 2 # El *= le multiplica el valor al valor anterior
 x /= 2 # El /= le dividie el valor al valor anterior
-x //= 2 
-x %= 1
-x **= 2
+x //= 2 # El //= le divide entero el valor al valor anterior
+x %= 1 
+x **= 2 # el **= le eleva al valor al valor anterior
 
 ## Operadores de comparación (nos devolverán True o False)
 

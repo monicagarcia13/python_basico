@@ -2,6 +2,68 @@
 LISTAS
 """
 
+
+# REPASO DE LISTAS 
+
+# Lista vacia 
+lista = []
+
+lista.append("Ana")
+print(lista) # Ana
+
+#Las listas son colecciones de datos indexados 
+# el indice empienza por  
+lista[0]
+
+Lista_enteros = list(range(1,21,2))
+print(Lista_enteros)
+
+
+lista_nombres = ["Pol", "Noa", "Sara", "Pepe" ]
+
+for nombre in lista_nombres:
+    indice = lista_nombres.index(nombre)
+    print(f"{indice} . {nombre}")
+
+for indice, valor in enumerate(lista_nombres): 
+    print(f"{indice} . {valor}")
+
+
+# Copia de una lista ( copy )
+
+nueva_lista1 = lista_nombres.copy()
+nueva_lista2 = lista_nombres[:] 
+
+
+#Mini ejercicio #Obtener los numeros elevados al cuadrado de la serie 
+
+lista_numeros = list(range(0,11))
+
+# necesitamos otra lista solo con los numeros elevados al cuadrado de la lista_numeros 
+
+lista_numeros_cuadrados = [x**2 for x in lista_numeros]
+print(lista_numeros_cuadrados)
+
+
+# esto es la desestruturacion de una lista
+#y obtener el valor de una lista 
+
+lista_ciudades = [ 'NY', 'LA', 'BCN']
+ny, la, bcn = lista_ciudades 
+print(bcn)
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
 # Las listas equivalen a los "arrays" de otros lenguajes
 # Las listas se indican mediante corchetes -> []
 # Las listas y los string son "iterables"
