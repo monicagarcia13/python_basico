@@ -53,15 +53,19 @@ print(bcn)
 
 
 
-# for index, valor in enumerate(lista_numeros):
-#     lista_numeros[index] = index+100
+for index, valor in enumerate(lista_numeros):
+    lista_numeros[index] = index+100
 
-# print(lista_numeros)
-
-
+print(lista_numeros)
 
 
 
- 
+pepito = "hola"
+print(id(pepito)) 
 
-
+nombre = "Monica" 
+for letra in nombre:
+    if letra == "c":
+        print(letra)
+        continue
+    print(letra)
