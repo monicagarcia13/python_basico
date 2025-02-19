@@ -10,4 +10,11 @@ A continuación debes hacer que b tenga el valor de a y a el de b,
 es decir, deben intercambiar sus valores
 La respuesta del programa será:
 "Ahora a vale Y y b vale X" (los valores que sean)
+
+
 """
+a =str(input("Introduce el primer valor  (a) => "))
+b = str(input("Introduce el segundo valor (b) => "))
+
+print(f"Ahora a vale {b} y b vale {a}")
+

@@ -8,18 +8,22 @@ longitud = len(conjunto)  # la longitud o cantidad de elmentos del conjunto (no 
 tipo = type(conjunto)  # para saber el tipo <class 'set'>
 conjuntoConstructor = set(("Este", "es", "un", "conjunto")) # creamos un conjunto usando el contructor
 
-# if "conjunto" in conjuntoConstructor: # podemos usar IN para saber si un elemento está presente
-#     print("Sí está la palabra")
+if "conjunto" in conjuntoConstructor: # podemos usar IN para saber si un elemento está presente
+    print("Sí está la palabra")
 
-# if "Python" not in conjuntoConstructor: # not in para saber si un elemento no está presente
-#     print("Python no se encuentra en el conjunto")
+if "Python" not in conjuntoConstructor: # not in para saber si un elemento no está presente
+    print("Python no se encuentra en el conjunto")
 
 # Agregar elementos a un conjunto (SET)
 
 telefonos = {'Xiaomi', 'Samsung', 'Motorola'}
 telefonos2 = ['Huawei', 'OnePlus', 'Nokia', 'Xiaomi' ] #puede ser cualquier colección
 
-telefonos.add("Iphone") # Agregar un elemento
+telefonos.add("Apple") # Agregar un elemento
+print(telefonos2)
+telefonos.update(telefonos2) # Agregar otra colección
+print(telefonos)
+
 
 telefonos.update(telefonos2) # Con update sumamos otra colección(puede ser cualquier colección) a nuestro conjunto
 

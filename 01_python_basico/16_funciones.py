@@ -1,6 +1,7 @@
 """
-FUNCIONES
+FUNCIONES # reutilizar codigo y hacer una función y llamar varias veces 
 """
+# la palabra reservada es def y le pasamos los parametros despues de () luego el codigo 
 
 # Declaración 1
 def sumar () :
@@ -59,3 +60,30 @@ def sumar(*argv) :
 sumar(1,2)
 sumar(3,4,5)
 sumar(3,7,907)
+
+def separarNombre( apellido_nombre: str) -> str :
+    lista = apellido_nombre.split(",")
+    apellido = lista[0].strip()
+    nombre = lista[1].strip()
+    return nombre, apellido
+
+nombre, apellido = separarNombre("Garcia, Monica")
+print(nombre, apellido)
+
+help(separarNombre)
+print(separarNombre().__doc__)
+
+
+
+    # """
+    # Devolvera de forma separada el nombre y el apellido
+
+    # @ Params
+    # str -> "Apellido, Nombre"
+
+    # @ Return
+    # str -> Nombre
+    # str -> Apellido 
+
+
+    # """
